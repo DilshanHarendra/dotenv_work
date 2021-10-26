@@ -31,7 +31,7 @@ jobs:
            echo NODE_APP_NAME=Dilshan >> .env
            echo NODE_APP_USER=perera >> .env
     - uses: dilshanharendra.github.io/dotenv_work/
-        with:
-          branch: main # The branch the action should deploy to.
-          folder: dist
+      with:
+        branch: main # The branch the action should deploy to.
+        folder: dist
 

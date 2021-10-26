@@ -30,6 +30,7 @@ jobs:
     - run: touch .env
            echo VUE_APP_NAME=Dilshan >> .env
            echo VUE_APP_USER=perera >> .env
+           echo VUE_APP_MY_NAME=${{ secrets.MY_NAME}} >> .env
     - run: npm run build
     - name: Deploy
       uses: JamesIves/github-pages-deploy-action@4.1.5
